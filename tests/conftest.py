@@ -82,7 +82,7 @@ def external_vault():
 
 @pytest.fixture
 def strategy(strategist, keeper, vault, external_vault, Strategy, gov):
-    strategy = strategist.deploy(Strategy, external_vault, vault)
+    strategy = strategist.deploy(Strategy, vault, external_vault)
     strategy.setKeeper(keeper)
     vault.addStrategy(strategy, 10_000, 0, 2 ** 256 - 1, 1_000, {"from": gov})
     yield strategy

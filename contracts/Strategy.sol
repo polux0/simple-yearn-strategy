@@ -34,6 +34,7 @@ contract Strategy is BaseStrategy {
     constructor(address _vault, address _externalVault) public BaseStrategy(_vault) {
         vault = VaultAPI(_vault);
         externalVault = VaultAPI(_externalVault);
+        want.safeApprove(address(_externalVault), type(uint256).max);
         // You can set these parameters on deployment to whatever you want
         // maxReportDelay = 6300;
         // profitFactor = 100;

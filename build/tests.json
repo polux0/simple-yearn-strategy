@@ -1,58 +1,19 @@
 {
   "contracts": {
-    "OpenZeppelin/openzeppelin-contracts@3.1.0/Address": "3b4158955f564edb18bd7a8ffdb49859c904f0b7",
-    "OpenZeppelin/openzeppelin-contracts@3.1.0/Math": "3b4158955f564edb18bd7a8ffdb49859c904f0b7",
-    "OpenZeppelin/openzeppelin-contracts@3.1.0/SafeERC20": "3b4158955f564edb18bd7a8ffdb49859c904f0b7",
-    "OpenZeppelin/openzeppelin-contracts@3.1.0/SafeMath": "3b4158955f564edb18bd7a8ffdb49859c904f0b7",
-    "Strategy": "f9061101a0d187aa683de5aa711d11acad554508"
+    "OpenZeppelin/openzeppelin-contracts@3.3.0/Address": "3b4158955f564edb18bd7a8ffdb49859c904f0b7",
+    "OpenZeppelin/openzeppelin-contracts@3.3.0/Math": "3b4158955f564edb18bd7a8ffdb49859c904f0b7",
+    "OpenZeppelin/openzeppelin-contracts@3.3.0/SafeERC20": "3b4158955f564edb18bd7a8ffdb49859c904f0b7",
+    "OpenZeppelin/openzeppelin-contracts@3.3.0/SafeMath": "3b4158955f564edb18bd7a8ffdb49859c904f0b7",
+    "Strategy": "0767ee7953d5ef8ef820ebcb8f0dd920bf02abae"
   },
   "tests": {
     "tests/test_migration.py": {
       "coverage": false,
       "isolated": false,
-      "results": "E",
-      "sha1": "4dad4d5a93e99816a025c1daf06cc4f02916a016",
-      "txhash": [
-        "1cd121da65dd89c70d4173a8a9cf456a21a9935b"
-      ]
+      "results": "F",
+      "sha1": "22c7e3f3d760be9c1d4ae215792a0196b0b0012d",
+      "txhash": []
     }
   },
-  "tx": {
-    "1cd121da65dd89c70d4173a8a9cf456a21a9935b": {
-      "Strategy": {
-        "5": [
-          [],
-          [],
-          []
-        ],
-        "6": [
-          [],
-          [],
-          []
-        ]
-      },
-      "Vault": {
-        "0": [
-          [
-            204,
-            206,
-            208,
-            210,
-            212,
-            214
-          ],
-          [
-            215
-          ],
-          [
-            205,
-            207,
-            209,
-            211,
-            213
-          ]
-        ]
-      }
-    }
-  }
+  "tx": {}
 }

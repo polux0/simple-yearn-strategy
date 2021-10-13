@@ -50,6 +50,8 @@ contract Strategy is BaseStrategy {
 
     function estimatedTotalAssets() public view override returns (uint256) {
         // TODO: Build a more accurate estimate using the value of all positions in terms of `want`
+        // was before
+        //return want.balanceOf(address(this)).add(balanceOfStake());
         return want.balanceOf(address(this)).add(balanceOfStake());
     }
 
@@ -164,6 +166,6 @@ contract Strategy is BaseStrategy {
         return _amtInWei;
     }
     function balanceOfStake() public view returns (uint256){
-        return (externalVault.balanceOf(address(this)).mul(externalVault.pricePerShare())).div(1e18);
+        return (externalVault.balanceOf(address(this)).mul(externalVault.pricePerShare()).div(1e6));
     }
 }
